@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		403C645E18D7AFC700AA1E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C645D18D7AFC700AA1E2B /* Foundation.framework */; };
+		403C646018D7AFC700AA1E2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C645F18D7AFC700AA1E2B /* CoreGraphics.framework */; };
+		403C646218D7AFC700AA1E2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C646118D7AFC700AA1E2B /* UIKit.framework */; };
+		403C646818D7AFC700AA1E2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 403C646618D7AFC700AA1E2B /* InfoPlist.strings */; };
+		403C646A18D7AFC700AA1E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C646918D7AFC700AA1E2B /* main.m */; };
+		403C646E18D7AFC700AA1E2B /* LOPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C646D18D7AFC700AA1E2B /* LOPAppDelegate.m */; };
+		403C647018D7AFC700AA1E2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403C646F18D7AFC700AA1E2B /* Images.xcassets */; };
+		403C647718D7AFC700AA1E2B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C647618D7AFC700AA1E2B /* XCTest.framework */; };
+		403C647818D7AFC700AA1E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C645D18D7AFC700AA1E2B /* Foundation.framework */; };
+		403C647918D7AFC700AA1E2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403C646118D7AFC700AA1E2B /* UIKit.framework */; };
+		403C648118D7AFC700AA1E2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 403C647F18D7AFC700AA1E2B /* InfoPlist.strings */; };
+		403C648318D7AFC700AA1E2B /* SolarizedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C648218D7AFC700AA1E2B /* SolarizedTests.m */; };
+		403C648D18D7B04E00AA1E2B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 403C648C18D7B04E00AA1E2B /* Settings.bundle */; };
+		403C649018D7B1B300AA1E2B /* LOPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C648F18D7B1B300AA1E2B /* LOPHelper.m */; };
+		403C649318D7B3C400AA1E2B /* LOPColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		403C647A18D7AFC700AA1E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 403C645218D7AFC700AA1E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 403C645918D7AFC700AA1E2B;
+			remoteInfo = Solarized;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		403C645A18D7AFC700AA1E2B /* Solarized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solarized.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		403C645D18D7AFC700AA1E2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		403C645F18D7AFC700AA1E2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		403C646118D7AFC700AA1E2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		403C646518D7AFC700AA1E2B /* Solarized-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Solarized-Info.plist"; sourceTree = "<group>"; };
+		403C646718D7AFC700AA1E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		403C646918D7AFC700AA1E2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		403C646B18D7AFC700AA1E2B /* Solarized-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Solarized-Prefix.pch"; sourceTree = "<group>"; };
+		403C646C18D7AFC700AA1E2B /* LOPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOPAppDelegate.h; sourceTree = "<group>"; };
+		403C646D18D7AFC700AA1E2B /* LOPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOPAppDelegate.m; sourceTree = "<group>"; };
+		403C646F18D7AFC700AA1E2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		403C647518D7AFC700AA1E2B /* SolarizedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarizedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		403C647618D7AFC700AA1E2B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		403C647E18D7AFC700AA1E2B /* SolarizedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SolarizedTests-Info.plist"; sourceTree = "<group>"; };
+		403C648018D7AFC700AA1E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		403C648218D7AFC700AA1E2B /* SolarizedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarizedTests.m; sourceTree = "<group>"; };
+		403C648C18D7B04E00AA1E2B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		403C648E18D7B1B300AA1E2B /* LOPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOPHelper.h; sourceTree = "<group>"; };
+		403C648F18D7B1B300AA1E2B /* LOPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPHelper.m; sourceTree = "<group>"; };
+		403C649118D7B3C400AA1E2B /* LOPColorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOPColorListViewController.h; sourceTree = "<group>"; };
+		403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPColorListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		403C645718D7AFC700AA1E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C646018D7AFC700AA1E2B /* CoreGraphics.framework in Frameworks */,
+				403C646218D7AFC700AA1E2B /* UIKit.framework in Frameworks */,
+				403C645E18D7AFC700AA1E2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403C647218D7AFC700AA1E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C647718D7AFC700AA1E2B /* XCTest.framework in Frameworks */,
+				403C647918D7AFC700AA1E2B /* UIKit.framework in Frameworks */,
+				403C647818D7AFC700AA1E2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		403C645118D7AFC700AA1E2B = {
+			isa = PBXGroup;
+			children = (
+				403C648C18D7B04E00AA1E2B /* Settings.bundle */,
+				403C646318D7AFC700AA1E2B /* Solarized */,
+				403C647C18D7AFC700AA1E2B /* SolarizedTests */,
+				403C645C18D7AFC700AA1E2B /* Frameworks */,
+				403C645B18D7AFC700AA1E2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		403C645B18D7AFC700AA1E2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				403C645A18D7AFC700AA1E2B /* Solarized.app */,
+				403C647518D7AFC700AA1E2B /* SolarizedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		403C645C18D7AFC700AA1E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403C645D18D7AFC700AA1E2B /* Foundation.framework */,
+				403C645F18D7AFC700AA1E2B /* CoreGraphics.framework */,
+				403C646118D7AFC700AA1E2B /* UIKit.framework */,
+				403C647618D7AFC700AA1E2B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		403C646318D7AFC700AA1E2B /* Solarized */ = {
+			isa = PBXGroup;
+			children = (
+				403C649418D7B3CB00AA1E2B /* Application */,
+				403C649518D7B3D200AA1E2B /* View Controllers */,
+				403C649618D7B3E100AA1E2B /* Helpers */,
+				403C646418D7AFC700AA1E2B /* Supporting Files */,
+				403C646F18D7AFC700AA1E2B /* Images.xcassets */,
+			);
+			path = Solarized;
+			sourceTree = "<group>";
+		};
+		403C646418D7AFC700AA1E2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				403C646518D7AFC700AA1E2B /* Solarized-Info.plist */,
+				403C646618D7AFC700AA1E2B /* InfoPlist.strings */,
+				403C646918D7AFC700AA1E2B /* main.m */,
+				403C646B18D7AFC700AA1E2B /* Solarized-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		403C647C18D7AFC700AA1E2B /* SolarizedTests */ = {
+			isa = PBXGroup;
+			children = (
+				403C648218D7AFC700AA1E2B /* SolarizedTests.m */,
+				403C647D18D7AFC700AA1E2B /* Supporting Files */,
+			);
+			path = SolarizedTests;
+			sourceTree = "<group>";
+		};
+		403C647D18D7AFC700AA1E2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				403C647E18D7AFC700AA1E2B /* SolarizedTests-Info.plist */,
+				403C647F18D7AFC700AA1E2B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		403C649418D7B3CB00AA1E2B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				403C646C18D7AFC700AA1E2B /* LOPAppDelegate.h */,
+				403C646D18D7AFC700AA1E2B /* LOPAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		403C649518D7B3D200AA1E2B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				403C649118D7B3C400AA1E2B /* LOPColorListViewController.h */,
+				403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		403C649618D7B3E100AA1E2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				403C648E18D7B1B300AA1E2B /* LOPHelper.h */,
+				403C648F18D7B1B300AA1E2B /* LOPHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		403C645918D7AFC700AA1E2B /* Solarized */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403C648618D7AFC700AA1E2B /* Build configuration list for PBXNativeTarget "Solarized" */;
+			buildPhases = (
+				403C645618D7AFC700AA1E2B /* Sources */,
+				403C645718D7AFC700AA1E2B /* Frameworks */,
+				403C645818D7AFC700AA1E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Solarized;
+			productName = Solarized;
+			productReference = 403C645A18D7AFC700AA1E2B /* Solarized.app */;
+			productType = "com.apple.product-type.application";
+		};
+		403C647418D7AFC700AA1E2B /* SolarizedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403C648918D7AFC700AA1E2B /* Build configuration list for PBXNativeTarget "SolarizedTests" */;
+			buildPhases = (
+				403C647118D7AFC700AA1E2B /* Sources */,
+				403C647218D7AFC700AA1E2B /* Frameworks */,
+				403C647318D7AFC700AA1E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				403C647B18D7AFC700AA1E2B /* PBXTargetDependency */,
+			);
+			name = SolarizedTests;
+			productName = SolarizedTests;
+			productReference = 403C647518D7AFC700AA1E2B /* SolarizedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		403C645218D7AFC700AA1E2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LOP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Pedro Lopes";
+				TargetAttributes = {
+					403C647418D7AFC700AA1E2B = {
+						TestTargetID = 403C645918D7AFC700AA1E2B;
+					};
+				};
+			};
+			buildConfigurationList = 403C645518D7AFC700AA1E2B /* Build configuration list for PBXProject "Solarized" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 403C645118D7AFC700AA1E2B;
+			productRefGroup = 403C645B18D7AFC700AA1E2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				403C645918D7AFC700AA1E2B /* Solarized */,
+				403C647418D7AFC700AA1E2B /* SolarizedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		403C645818D7AFC700AA1E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C646818D7AFC700AA1E2B /* InfoPlist.strings in Resources */,
+				403C648D18D7B04E00AA1E2B /* Settings.bundle in Resources */,
+				403C647018D7AFC700AA1E2B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403C647318D7AFC700AA1E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C648118D7AFC700AA1E2B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		403C645618D7AFC700AA1E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C649318D7B3C400AA1E2B /* LOPColorListViewController.m in Sources */,
+				403C649018D7B1B300AA1E2B /* LOPHelper.m in Sources */,
+				403C646E18D7AFC700AA1E2B /* LOPAppDelegate.m in Sources */,
+				403C646A18D7AFC700AA1E2B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403C647118D7AFC700AA1E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403C648318D7AFC700AA1E2B /* SolarizedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		403C647B18D7AFC700AA1E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 403C645918D7AFC700AA1E2B /* Solarized */;
+			targetProxy = 403C647A18D7AFC700AA1E2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		403C646618D7AFC700AA1E2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				403C646718D7AFC700AA1E2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		403C647F18D7AFC700AA1E2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				403C648018D7AFC700AA1E2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		403C648418D7AFC700AA1E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		403C648518D7AFC700AA1E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		403C648718D7AFC700AA1E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Solarized/Solarized-Prefix.pch";
+				INFOPLIST_FILE = "Solarized/Solarized-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		403C648818D7AFC700AA1E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Solarized/Solarized-Prefix.pch";
+				INFOPLIST_FILE = "Solarized/Solarized-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		403C648A18D7AFC700AA1E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Solarized.app/Solarized";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Solarized/Solarized-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SolarizedTests/SolarizedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		403C648B18D7AFC700AA1E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Solarized.app/Solarized";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Solarized/Solarized-Prefix.pch";
+				INFOPLIST_FILE = "SolarizedTests/SolarizedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		403C645518D7AFC700AA1E2B /* Build configuration list for PBXProject "Solarized" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403C648418D7AFC700AA1E2B /* Debug */,
+				403C648518D7AFC700AA1E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		403C648618D7AFC700AA1E2B /* Build configuration list for PBXNativeTarget "Solarized" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403C648718D7AFC700AA1E2B /* Debug */,
+				403C648818D7AFC700AA1E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		403C648918D7AFC700AA1E2B /* Build configuration list for PBXNativeTarget "SolarizedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403C648A18D7AFC700AA1E2B /* Debug */,
+				403C648B18D7AFC700AA1E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 403C645218D7AFC700AA1E2B /* Project object */;
+}

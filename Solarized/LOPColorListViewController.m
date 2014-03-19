@@ -8,6 +8,7 @@
 
 #import "LOPColorListViewController.h"
 #import "LOPHelper.h"
+#import "LOPColorTableViewCell.h"
 
 @interface LOPColorListViewController ()
 
@@ -32,10 +33,17 @@
 {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerClass:[LOPColorTableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    // table style
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.99 green:0.96 blue:0.89 alpha:1.00];
+    self.tableView.separatorColor = [UIColor clearColor];
+    self.tableView.rowHeight = 64.0f;
     
     // load colors
     self.colors = [LOPHelper getColors];
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -61,9 +69,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = [[self colorForIndexPath:indexPath] valueForKey:@"name"];
-    
+    LOPColorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+   // cell.textLabel.text = [[self colorForIndexPath:indexPath] valueForKey:@"name"];
+    [cell setColor:[self colorForIndexPath:indexPath]];
     
     return cell;
 }

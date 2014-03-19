@@ -9,10 +9,15 @@
 #import "LOPAppDelegate.h"
 #import "LOPColorListViewController.h"
 
+// Crashlytics
+#import <Crashlytics/Crashlytics.h>
+
 @implementation LOPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Crashlytics startWithAPIKey:@"23fc3a72601974bf2932492e8609d82c6ca052fc"];
+    
     application.statusBarStyle = UIStatusBarStyleDefault;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -12,11 +12,17 @@
 
 + (UIFont *)preferredMenloFontForTextStyle:(NSString *)textStyle;
 
++ (UIFont *)preferredMenloSmallFontForTextStyle:(NSString *)textStyle;
+
 + (UIFont *)preferredMenloItalicFontForTextStyle:(NSString *)textStyle;
 
 + (UIFont *)preferredMenloBoldFontForTextStyle:(NSString *)textStyle;
 
-+(NSArray *)getColors;
++ (NSArray *)getColors;
+
++ (UIColor *)colorWithHexString:(NSString *)hexString;
+
++ (UIColor *)rgbColorForSolarizedColor:(NSDictionary *)color;
 
 
 @end

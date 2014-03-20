@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LOPShareButton.h"
 
 @interface LOPColorTableViewCell : UITableViewCell
 
 @property (nonatomic) NSDictionary *color;
+@property (nonatomic) LOPShareButton *shareButton;
 
 @end

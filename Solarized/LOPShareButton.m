@@ -21,6 +21,7 @@
         _circleView = [[UIView alloc] init];
         _circleView.userInteractionEnabled = NO;
         _circleView.layer.cornerRadius = 20.0f;
+
     }
     return _circleView;
 }
@@ -31,15 +32,30 @@
     }
 }
 
-# pragma mark - UIButton
+# pragma mark - UIView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self addSubview:self.circleView];
+        self.titleLabel.text = @"+";
     }
     return self;
+}
+
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGSize size = self.bounds.size;
+    
+    CGRect titleFrame = self.titleLabel.frame;
+    titleFrame.origin.x = roundf((size.width - titleFrame.size.width)/2.0f);
+    titleFrame.origin.y = roundf((size.height - titleFrame.size.height)/2.0f);
+    self.titleLabel.frame = titleFrame;
+    self.circleView.backgroundColor = [UIColor colorWithRed:0.61 green:0.71 blue:0.53 alpha:1];
+    self.circleView.frame = CGRectMake(MIN(roundf((size.width - 32.0f)/2),titleFrame.origin.x - 8.0f), roundf((size.height - 32.0f) / 2.0f), MAX(32.0f, titleFrame.size.width + 16.0f), 32.0f);
+    
 }
 
 @end

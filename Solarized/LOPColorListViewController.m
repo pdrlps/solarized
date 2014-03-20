@@ -38,7 +38,7 @@
     // table style
     self.tableView.backgroundColor = [UIColor colorWithRed:0.99 green:0.96 blue:0.89 alpha:1.00];
     self.tableView.separatorColor = [UIColor clearColor];
-    self.tableView.rowHeight = 64.0f;
+    self.tableView.rowHeight = 48.0f;
     
     // load colors
     self.colors = [LOPHelper getColors];
@@ -89,6 +89,15 @@
 {
     // Return NO if you do not want the item to be re-orderable.
     return NO;
+}
+
+# pragma mark - UITableViewDelegate
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSMutableArray *sharingItems = [NSMutableArray new];
+    
+    [sharingItems addObject:@"Share me"];
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:sharingItems applicationActivities:nil];
+    [self presentViewController:activityController animated:YES completion:nil];
 }
 
 # pragma mark - Actions

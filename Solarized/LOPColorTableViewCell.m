@@ -12,8 +12,17 @@
 @implementation LOPColorTableViewCell
 
 @synthesize color = _color;
+@synthesize shareButton = _shareButton;
 
 # pragma mark - Accessors
+
+-(LOPShareButton *)shareButton {
+    if(!_shareButton) {
+        _shareButton = [[LOPShareButton alloc] init];
+    }
+    
+    return _shareButton;
+}
 
 -(void)setColor:(NSDictionary *)color {
     _color = color;
@@ -36,6 +45,14 @@
 # pragma mark - UIView
 -(void)layoutSubviews{
     [super layoutSubviews];
+    
+    CGSize size = self.contentView.bounds.size;
+    CGSize buttonSize = [self.shareButton sizeThatFits:CGSizeMake(56.0f, size.height)];
+    self.shareButton.frame = CGRectMake(size.width - buttonSize.width, 0.0f,  buttonSize.width, buttonSize.height);
+    
+    CGRect frame = self.textLabel.frame;
+    frame.size.width = size.width - frame.origin.x - 8.0f - buttonSize.width;
+    self.textLabel.frame = frame;
 }
 
 # pragma mark - UITableViewCell
@@ -45,10 +62,8 @@
     self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        
         self.backgroundColor = [UIColor clearColor];
-        
-        
+        [self.contentView addSubview:self.shareButton];
     }
     return self;
 }
@@ -56,6 +71,13 @@
 -(void)prepareForReuse{
     [super prepareForReuse];
     self.color = nil;
+}
+
+# pragma mark - UIGestureRecognizer
+
+-(BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    CGPoint point = [touch locationInView:self];
+    return CGRectContainsPoint(self.contentView.frame, point);
 }
 
 

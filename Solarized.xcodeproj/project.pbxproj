@@ -25,6 +25,8 @@
 		403C648D18D7B04E00AA1E2B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 403C648C18D7B04E00AA1E2B /* Settings.bundle */; };
 		403C649018D7B1B300AA1E2B /* LOPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C648F18D7B1B300AA1E2B /* LOPHelper.m */; };
 		403C649318D7B3C400AA1E2B /* LOPColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */; };
+		40CAD8C818E2466600E2A642 /* LOPTypePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CAD8C718E2466600E2A642 /* LOPTypePickerViewController.m */; };
+		40CAD8CB18E2501400E2A642 /* LOPInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CAD8CA18E2501400E2A642 /* LOPInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		403C648F18D7B1B300AA1E2B /* LOPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPHelper.m; sourceTree = "<group>"; };
 		403C649118D7B3C400AA1E2B /* LOPColorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOPColorListViewController.h; sourceTree = "<group>"; };
 		403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPColorListViewController.m; sourceTree = "<group>"; };
+		40CAD8C618E2466600E2A642 /* LOPTypePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOPTypePickerViewController.h; sourceTree = "<group>"; };
+		40CAD8C718E2466600E2A642 /* LOPTypePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPTypePickerViewController.m; sourceTree = "<group>"; };
+		40CAD8C918E2501400E2A642 /* LOPInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOPInfoViewController.h; sourceTree = "<group>"; };
+		40CAD8CA18E2501400E2A642 /* LOPInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOPInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,10 @@
 			children = (
 				403C649118D7B3C400AA1E2B /* LOPColorListViewController.h */,
 				403C649218D7B3C400AA1E2B /* LOPColorListViewController.m */,
+				40CAD8C618E2466600E2A642 /* LOPTypePickerViewController.h */,
+				40CAD8C718E2466600E2A642 /* LOPTypePickerViewController.m */,
+				40CAD8C918E2501400E2A642 /* LOPInfoViewController.h */,
+				40CAD8CA18E2501400E2A642 /* LOPInfoViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -317,8 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CAD8CB18E2501400E2A642 /* LOPInfoViewController.m in Sources */,
 				403C649318D7B3C400AA1E2B /* LOPColorListViewController.m in Sources */,
 				403C649018D7B1B300AA1E2B /* LOPHelper.m in Sources */,
+				40CAD8C818E2466600E2A642 /* LOPTypePickerViewController.m in Sources */,
 				403C646E18D7AFC700AA1E2B /* LOPAppDelegate.m in Sources */,
 				402140BE18DA601F00AB95E9 /* LOPShareButton.m in Sources */,
 				403C646A18D7AFC700AA1E2B /* main.m in Sources */,

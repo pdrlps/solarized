@@ -9,6 +9,8 @@
 #import "LOPColorListViewController.h"
 #import "LOPHelper.h"
 #import "LOPColorTableViewCell.h"
+#import "LOPTypePickerViewController.h"
+#import "LOPInfoViewController.h"
 
 @interface LOPColorListViewController ()
 
@@ -43,7 +45,11 @@
     // load colors
     self.colors = [LOPHelper getColors];
     
+    // set righ navigation bar item
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Pick" style:UIBarButtonItemStylePlain target:self action:@selector(showPicker:)];
     
+    // set left navigation bar item
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(showInfo:)];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -104,6 +110,24 @@
 
 -(NSDictionary *)colorForIndexPath:(NSIndexPath *)indexPath {
     return self.colors[indexPath.row];
+}
+
+/** 
+ * Show color type picker.
+ **/
+-(void)showPicker:(id) sender {
+    LOPTypePickerViewController *pickerViewController = [[LOPTypePickerViewController alloc] init];
+    
+    [self.navigationController pushViewController:pickerViewController animated:YES];
+}
+
+/*
+ * Show info about Solarized.
+ */
+-(void)showInfo:(id) sender {
+    LOPInfoViewController *pickerViewController = [[LOPInfoViewController alloc] init];
+    
+    [self.navigationController pushViewController:pickerViewController animated:YES];
 }
 
 @end
